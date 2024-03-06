@@ -2,9 +2,9 @@ name: syncfusion_flutter_pdfviewer
 description: Flutter PDF Viewer library is used to display a PDF document seamlessly and efficiently.
 version: 24.1.41
 homepage: https://github.com/syncfusion/flutter-widgets/tree/master/packages/syncfusion_flutter_pdfviewer
-
+publish_to: none
 environment:
-  sdk: '>=2.17.0 <4.0.0'
+  sdk: ">=2.17.0 <4.0.0"
   flutter: ">=1.20.0"
 
 flutter:
@@ -41,26 +41,42 @@ dependencies:
   intl: ^0.18.0
 
   syncfusion_pdfviewer_platform_interface:
-      path: ../syncfusion_pdfviewer_platform_interface
-    
+    # path: ../syncfusion_pdfviewer_platform_interface
+    git:
+      url: https://github.com/alnaughty/syncfusion.git
+      path: packages/syncfusion_pdfviewer_platform_interface
+
   syncfusion_pdfviewer_web:
-      path: ../syncfusion_pdfviewer_web
-    
+    # path: ../syncfusion_pdfviewer_web
+    git:
+      url: https://github.com/alnaughty/syncfusion.git
+      path: packages/syncfusion_pdfviewer_web
+
   syncfusion_pdfviewer_macos:
-      path: ../syncfusion_pdfviewer_macos
-    
+    git:
+      url: https://github.com/alnaughty/syncfusion.git
+      path: packages/syncfusion_pdfviewer_macos
+
   syncfusion_pdfviewer_windows:
-      path: ../syncfusion_pdfviewer_windows
-   
+    git:
+      url: https://github.com/alnaughty/syncfusion.git
+      path: packages/syncfusion_pdfviewer_windows
+
   syncfusion_flutter_core:
-      path: ../syncfusion_flutter_core
+    git:
+      url: https://github.com/alnaughty/syncfusion.git
+      path: packages/syncfusion_flutter_core
 
   syncfusion_flutter_pdf:
-      path: ../syncfusion_flutter_pdf
-    
+    git:
+      url: https://github.com/alnaughty/syncfusion.git
+      path: packages/syncfusion_flutter_pdf
+
   syncfusion_flutter_signaturepad:
-      path: ../syncfusion_flutter_signaturepad
-    
+    git:
+      url: https://github.com/alnaughty/syncfusion.git
+      path: packages/syncfusion_flutter_signaturepad
+
   url_launcher: ^6.1.0
 
 dev_dependencies:
@@ -68,17 +84,17 @@ dev_dependencies:
     sdk: flutter
 
 screenshots:
-  - description: 'This screenshot shows the PdfViewer widget, which displays a PDF document.'
+  - description: "This screenshot shows the PdfViewer widget, which displays a PDF document."
     path: screenshots/flutter-pdf-viewer.png
-  - description: 'This screenshot shows the page navigation in the PdfViewer widget that is used to navigate to the desired page.'
+  - description: "This screenshot shows the page navigation in the PdfViewer widget that is used to navigate to the desired page."
     path: screenshots/flutter-pdf-viewer-page-navigation.png
-  - description: 'This screenshot shows the bookmark navigation in the PdfViewer widget that is used to navigate to the desired bookmark.'
+  - description: "This screenshot shows the bookmark navigation in the PdfViewer widget that is used to navigate to the desired bookmark."
     path: screenshots/flutter-pdf-viewer-bookmark-navigation.png
-  - description: 'This screenshot shows the selection and copying of text in the PdfViewer widget.'
+  - description: "This screenshot shows the selection and copying of text in the PdfViewer widget."
     path: screenshots/flutter-pdf-viewer-text-selection.png
-  - description: 'This screenshot shows the text search in the PdfViewer widget.'
+  - description: "This screenshot shows the text search in the PdfViewer widget."
     path: screenshots/flutter-pdf-viewer-text-search.png
-  - description: 'This screenshot shows theme support in the PdfViewer widget.'
+  - description: "This screenshot shows theme support in the PdfViewer widget."
     path: screenshots/flutter-pdf-viewer-dark-theme.png
-  - description: 'This screenshot shows the localization support in the PdfViewer widget.'
+  - description: "This screenshot shows the localization support in the PdfViewer widget."
     path: screenshots/flutter-pdf-viewer-localization.png

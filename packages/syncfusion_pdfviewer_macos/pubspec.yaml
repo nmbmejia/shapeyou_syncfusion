@@ -2,9 +2,9 @@ name: syncfusion_pdfviewer_macos
 description: macOS platform implementation of the Flutter PDF Viewer library that lets you view the PDF documents seamlessly and efficiently.
 version: 21.2.5
 homepage: https://github.com/syncfusion/flutter-widgets/tree/master/packages/syncfusion_pdfviewer_macos
-
+publish_to: none
 environment:
-  sdk: '>=2.17.0 <4.0.0'
+  sdk: ">=2.17.0 <4.0.0"
   flutter: ">=1.20.0"
 
 dependencies:
@@ -12,7 +12,9 @@ dependencies:
     sdk: flutter
 
   syncfusion_pdfviewer_platform_interface:
-      path: ../syncfusion_pdfviewer_platform_interface
+    git:
+      url: https://github.com/alnaughty/syncfusion.git
+      path: packages/syncfusion_pdfviewer_platform_interface
 
 dev_dependencies:
   flutter_test:
@@ -21,5 +23,5 @@ dev_dependencies:
 flutter:
   plugin:
     platforms:
-     macos:
+      macos:
         pluginClass: SyncfusionFlutterPdfViewerPlugin
